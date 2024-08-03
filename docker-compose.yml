@@ -1,0 +1,21 @@
+version: '3'
+services:
+  cassdb:
+    restart: always
+    image: cassandra:latest
+  elastic:
+    restart: always
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.1
+  redis:
+    restart: always
+    image: redis
+  arsipbe:
+    build: .
+    env_file: .env
+    ports:
+      - "5002:5002"
+    #volumes: ['.:/']
+    links:
+      - cassdb:cassdb
+      - elastic:elastic
+      - redis:redis

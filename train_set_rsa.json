@@ -1,0 +1,16 @@
+{"keywords":
+	[
+		{"tag": "salam",
+		 "patterns": ["halo", "hi", "siang", "pagi", "sore", "malam", "selamat pagi", "selamat siang", "selamat sore", "selamat malam"],
+		 "responses": ["hi", "halo", "ada yang bisa saya bantu?"]
+		},
+		{"tag": "pendaftaran",
+		 "patterns": ["Bisa minta tolong didaftarkan konsul", "saya mau daftar", "saya mau booking online", "apakah saya dapat memesan", "apakah saya dapat registrasi", "apakah saya bisa booking"],
+		 "responses": ["tentu", "tentu saja"]
+		},
+		{"tag": "pamit",
+		 "patterns": ["ok", "terima kasih", "baik", "begitu", "oke", "terima kasih banyak", "makasih"],
+		 "responses": ["senang dapat membantu anda", "sampai jumpa"]
+		}
+	]
+}
